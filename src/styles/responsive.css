@@ -1,0 +1,107 @@
+:root {
+  --emoji-tamanho: 1.7rem;
+  --texto-cor-primaria: #d89b55;
+}
+
+
+@media (max-width: 720px) {
+  body {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  .barraDeNavegacao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    gap: 2rem;
+    padding-right: 0;
+  }
+
+  .textoChamadaPrincipal {
+    font-size: 3rem;
+  }
+
+  .subtituloChamadaPrincipal {
+    font-size: 1rem;
+    width: 25rem;
+    text-align: center;
+  }
+
+  .subtituloChamadaPrincipal::before,
+  .subtituloChamadaPrincipal::after {
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .tituloDaSecaoSobreMim {
+    font-size: 1.5rem;
+    text-align: center;
+    width: 100%;
+    padding-right: 0;
+  }
+
+  .sobreMimContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .fotoAutora {
+    width: 15rem;
+    height: 15rem;
+    object-fit: cover;
+    border-radius: 999999999px;
+    border: 6px solid var(--texto-cor-primaria);
+    margin-top: 1rem;
+  }
+
+  .textoSobreMim {
+    width: 25rem;
+    text-align: justify;
+    margin-bottom: 1rem;
+  }
+
+  .textoChamativo {
+    height: 100vh;
+    padding-top: 26rem;
+    margin-bottom: 10rem;
+  }
+
+  .crieInspire {
+    font-size: 5.5rem;
+    font-weight: 400;
+    text-wrap: 1;
+    width: 16rem;
+    text-align: center;
+    margin: 0 auto;
+    margin-right: 6rem;
+    color: var(--texto-cor-secundaria);
+    text-shadow: -8px 7px 2px #a7978922;
+  }
+
+  .cursos {
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 42rem;
+    margin-bottom: 35rem;
+  }
+
+  .atendimento>p {
+    font-size: 1rem;
+
+  }
+
+  footer {
+    border-radius: 20px;
+    overflow: hidden;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}

@@ -1,0 +1,428 @@
+/* CSS Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+:root {
+  --emoji-tamanho: 1.7rem;
+  --emoji-desenvolvedor: 1rem;
+  --foto-autora-tamanho: 25rem;
+  --main-background: #f0e7de;
+  --curso-container: #d7c2af;
+  --texto-cor-primaria: #d89b55;
+  --texto-cor-secundaria: #d7c2af;
+  --whatsapp-cor: #128c7e;
+  --rodape-cor: #ffb5c3;
+}
+
+body {
+  line-height: 1.5;
+  font-family: 'Poppins', system-ui, -apple-system, BlinkMacSystemFont,
+    'Segoe UI', Roboto, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  font-weight: 400;
+  background: var(--main-background);
+  color: #222;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  background: none;
+  color: inherit;
+  outline: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+.barraDeNavegacao {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 10rem;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.logo {
+  width: 10rem;
+  border-radius: 99999999px;
+}
+
+.textoChamadaPrincipal {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Kalnia', system-ui, -apple-system, BlinkMacSystemFont,
+    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
+    sans-serif;
+  font-size: 4rem;
+}
+
+.subtituloChamadaPrincipal {
+  width: 35rem;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 300;
+  margin: 0 auto;
+}
+
+.subtituloChamadaPrincipal::before,
+.subtituloChamadaPrincipal::after {
+  content: '';
+  display: inline-block;
+  width: var(--emoji-tamanho);
+  height: var(--emoji-tamanho);
+  background-image: url('https://fonts.gstatic.com/s/e/notoemoji/latest/2728/512.gif');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.inicio {
+  height: 540px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.tituloDaSecaoSobreMim {
+  text-align: end;
+  padding-right: 30rem;
+  font-family: 'Julius Sans One', 'Poppins';
+  color: var(--texto-cor-primaria);
+}
+
+.textoSobreMim {
+  width: 30rem;
+  text-align: justify;
+  margin-bottom: 1rem;
+}
+
+.fotoAutora {
+  width: var(--foto-autora-tamanho);
+  height: var(--foto-autora-tamanho);
+  object-fit: cover;
+  border-radius: 999999999px;
+  border: 6px solid var(--texto-cor-primaria);
+}
+
+.sobreMimContainer {
+  display: flex;
+  justify-content: center;
+  gap: 7rem;
+}
+
+.sobre {
+  padding-top: 6rem;
+  height: 100vh;
+}
+
+.youtubeContainer {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.instagramContainer {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: 0.6rem;
+}
+
+.crieInspire {
+  font-family: 'Kalnia', system-ui, -apple-system, BlinkMacSystemFont,
+    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
+    sans-serif;
+  font-size: 5.5rem;
+  font-weight: 400;
+  text-wrap: 1;
+  width: 16rem;
+  text-align: center;
+  margin: 0 auto;
+  color: var(--texto-cor-secundaria);
+  text-shadow: -8px 7px 2px #a7978922;
+}
+
+.cursos {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  height: 100vh;
+}
+
+.cursoContainer {
+  background-color: var(--curso-container);
+  width: 25rem;
+  height: 36rem;
+}
+
+.cursoImagem {
+  width: 100%;
+  height: 16rem;
+  object-fit: cover;
+}
+
+.cursoTitulo {
+  font-size: 2rem;
+}
+
+.textoChamativo {
+  height: 100vh;
+  padding-top: 6rem;
+}
+
+.cursoContainerTextos {
+  padding: 0 1rem;
+}
+
+.botaoComprar {
+  border: 2px solid var(--texto-cor-primaria);
+  padding: 0.4rem;
+  width: 100%;
+  display: block;
+  font-family: 'Poppins';
+  font-weight: 500;
+  text-align: center;
+  margin-top: 1rem;
+  text-transform: uppercase;
+  color: var(--texto-cor-primaria);
+}
+
+.botaoComprar:hover {
+  background: var(--texto-cor-primaria);
+  color: white;
+  transition: all 300ms ease-in-out;
+}
+
+.containerWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cursoDescricao {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  line-clamp: 8;
+  -webkit-line-clamp: 8;
+  -webkit-box-orient: vertical;
+}
+
+.atendimento {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.atendimento>h3 {
+  font-family: 'Kalnia', system-ui, -apple-system, BlinkMacSystemFont,
+    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
+    sans-serif;
+  font-size: 2.4rem;
+  text-align: center;
+  font-weight: 300;
+}
+
+.atendimento>h3>strong {
+  font-weight: 500 !important;
+}
+
+.atendimento>p {
+  font-size: 1.25rem;
+}
+
+.botaoChat {
+  background-color: var(--whatsapp-cor);
+  padding: 0.7rem 1.2rem;
+  text-transform: uppercase;
+  color: whitesmoke;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+
+  transition: all 300ms ease-in-out;
+}
+
+.botaoChat:hover {
+  background-color: #1ac695;
+}
+
+.whatsapp {
+  width: 1.7rem;
+  height: 1.7rem;
+}
+
+footer {
+  background-color: var(--rodape-cor);
+  padding-bottom: 1.4rem;
+  margin-left: 1.4rem;
+  border-radius: 20px 20px 0px 0px;
+  margin-right: 1.4rem;
+}
+
+.direitos {
+  font-size: 0.75rem;
+  text-align: center;
+}
+
+.logomarcaRodape {
+  width: 12rem;
+  margin: 0 auto;
+}
+
+.desenvolvedor {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 0.75rem;
+  justify-content: center;
+  margin-top: 0.75rem;
+}
+
+.emojiProgramador {
+  width: var(--emoji-desenvolvedor);
+  padding-bottom: 0.2rem;
+}
+
+.desenvolvedor>a {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+@keyframes tilt-shaking {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(5deg);
+  }
+
+  50% {
+    transform: rotate(0eg);
+  }
+
+  75% {
+    transform: rotate(-5deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.desenvolvedor>a>svg {
+  width: 1rem;
+  height: 1rem;
+}
+
+.desenvolvedor>a:hover>svg {
+  animation: 300ms tilt-shaking infinite;
+}
+
+.desenvolvedor>a:hover {
+  color: blue;
+}
+
+.redesSocialRodape {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+  gap: 1rem;
+}
+
+.redesSocialRodape a.instagramLink svg {
+  background: var(--main-background);
+  border-radius: 6px;
+  padding: 0.2rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  transition: fill 0.3s, transform 0.3s;
+}
+
+.redesSocialRodape a.facebookLink svg {
+  background: var(--main-background);
+  border-radius: 6px;
+  padding: 0.2rem;
+  transition: fill 0.3s, transform 0.3s;
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.redesSocialRodape a.youtubeLink svg {
+  background: var(--main-background);
+  border-radius: 6px;
+  padding: 0.2rem;
+  transition: fill 0.3s, transform 0.3s;
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.redesSocialRodape a.instagramLink:hover svg {
+  background: #e4405f;
+  color: var(--main-background);
+  transform: scale(1.15) rotate(-8deg);
+}
+
+.redesSocialRodape a.facebookLink:hover svg {
+  color: var(--main-background);
+  /* Facebook hover */
+  background: #145db2;
+  transform: scale(1.15) rotate(8deg);
+}
+
+.redesSocialRodape a.youtubeLink:hover svg {
+  color: var(--main-background);
+  background: #c4302b;
+  /* Youtube hover */
+  transform: scale(1.15) rotate(-8deg);
+}
+
+.cursosDisponiveis {
+  text-align: center;
+  font-size: 3rem;
+  font-family: 'Kalnia', 'Poppins';
+  font-weight: 300;
+  text-transform: uppercase;
+  color: var(--texto-cor-secundaria);
+  margin-bottom: 2rem;
+}
