@@ -6,7 +6,7 @@ const cursosDisponiveis = [
       'Aprenda a criar sandálias artesanais exclusivas com técnicas detalhadas e passo a passo.',
     preco: 100,
     link: '#curso1',
-    imagem: '../public/sandalia1.png',
+    imagem: './public/sandalia1.png',
   },
   {
     id: 2,
@@ -15,7 +15,7 @@ const cursosDisponiveis = [
       'Descubra como produzir peças criativas em feltro, desde o básico até projetos avançados.',
     preco: 30,
     link: '#curso2',
-    imagem: '../public/sandalia2.png',
+    imagem: './public/sandalia2.png',
   },
   {
     id: 3,
@@ -24,7 +24,7 @@ const cursosDisponiveis = [
       'Aprenda técnicas de artesanato utilizando fios e barbantes para criar itens decorativos e utilitários.Aprenda técnicas de artesanato utilizando fios e barbantes para criar itens decorativos e utilitários.Aprenda técnicas de artesanato utilizando fios e barbantes para criar itens decorativos e utilitários.Aprenda técnicas de artesanato utilizando fios e barbantes para criar itens decorativos e utilitários.Aprenda técnicas de artesanato utilizando fios e barbantes para criar itens decorativos e utilitários.Aprenda técnicas de artesanato utilizando fios e barbantes para criar itens decorativos e utilitários.Aprenda técnicas de artesanato utilizando fios e barbantes para criar itens decorativos e utilitários.',
     preco: 50,
     link: '#curso3',
-    imagem: '../public/sandalia1.png',
+    imagem: './public/sandalia1.png',
   },
 ];
 
